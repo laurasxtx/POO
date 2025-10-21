@@ -9,9 +9,7 @@ public class instrumento {
         System.out.println("El instrumento produce un sonido.");
     }
 
-    public void mostrarTipo() {
-        System.out.println("Tipo de sonido: " + tipoSonido);
-    }
+    
 }
 
 
