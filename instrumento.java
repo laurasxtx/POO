@@ -1,4 +1,5 @@
 public class instrumento {
+    
     String tipoSonido; 
 
     public instrumento(String tipoSonido) {
@@ -13,5 +14,5 @@ public class instrumento {
 }
 
 
-
     
+
