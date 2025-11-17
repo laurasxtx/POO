@@ -1,23 +1,24 @@
 public class Controlador {
-    private Boton boton;
-    private Puerta puerta;
-    private Piso piso;
+    // *el controlador gestiona las interraciones entre los componentes
+    private Boton boton; //*Boton presionado  */
+    private Puerta puerta;//*puerta actual, puede ser o la puerta piso o la puerta Ascensor */
+    private Piso piso;//*piso donde se encuentra  */
 
-    // Constructor vacio o con parámetros si se desea
+    //* constructor para poder inicializar la clase Controlador
     public Controlador() {
     }
 
-    // Métodos indicados en el diagrama
+    //* metodos para que el ascensor suba a un piso especifico
     public void subir(int piso) {
         // lógica para subir a un piso
         System.out.println("Subiendo al piso " + piso);
     }
-
+    //*metodo para que el ascensor baje a un piso especifico */
     public void bajar(int piso) {
         // lógica para bajar a un piso
         System.out.println("Bajando al piso " + piso);
     }
-
+    //*metodo para que el ascensor abra puertas  */
     public void abrirPuerta() {
         if (puerta != null) {
             puerta.abrir();
@@ -25,7 +26,7 @@ public class Controlador {
             System.out.println("No hay puerta asociada.");
         }
     }
-
+    //*metodo para que el ascensor cierre puertas */
     public void cerrarPuerta() {
         if (puerta != null) {
             puerta.cerrar();
@@ -33,7 +34,7 @@ public class Controlador {
             System.out.println("No hay puerta asociada.");
         }
     }
-
+    //*metodo para que el ascensor se detenga */
     public void detener() {
         // lógica para detener el ascensor
         System.out.println("Ascensor detenido.");

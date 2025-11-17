@@ -1,10 +1,14 @@
 public class Ascensor {
+    // *esto es para la capacidad máxima de personas en el ascensor
     private int capacidad;
+    // *piso en donde se encontraria el asensor actualemnte
     private int pisoActual;
+    // *determina ssi la puerta esta abierta o cerrada
     private String estado; // abierto/cerrado
+    // *indica la direccion en la que se mueve el ascensor
     private String direccion; // subiendo/bajando/detenido
 
-    // Constructor
+    // *Constructor para que se pueda inicializar la clase Ascensor 
     public Ascensor(int capacidad, int pisoActual, String estado, String direccion) {
         this.capacidad = capacidad;
         this.pisoActual = pisoActual;
@@ -12,7 +16,7 @@ public class Ascensor {
         this.direccion = direccion;
     }
 
-    // Getters y setters
+    // *estos son los getter y setters para cada uno de los atributos de la clase Ascensor
     public int getCapacidad() {
         return capacidad;
     }
